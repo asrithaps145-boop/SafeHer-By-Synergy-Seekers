@@ -350,3 +350,57 @@ footer{
     background:#1D4ED8;
     color:white;
 }
+/* SOS POPUP */
+
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.popup-content{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    width:350px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    animation:popupShow 0.3s ease;
+}
+
+.popup-content h2{
+    color:#22c55e;
+    margin-bottom:15px;
+}
+
+.popup-content p{
+    margin-bottom:20px;
+    color:#555;
+}
+
+.popup-content button{
+    background:#7B2CBF;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+@keyframes popupShow{
+    from{
+        transform:scale(0.8);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
